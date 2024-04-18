@@ -1,0 +1,291 @@
+:root {
+  --font-family: 'DM Sans', sans-serif;
+  --second-family: 'Titan One', sans-serif;
+  --strong-red: #d41443;
+  /* background hero + some */
+  --pale-pink: #ffb8ca;
+  --pale-red: #ffa5ba;
+  /* background how-its-made + footer */
+  --very-pale-red: #fff5f6;
+  --very-soft-orange: #f0d1a5;
+  --very-soft-green: #c2e297;
+  /* background comentariu */
+  --very-light-gray: #fafafa;
+  /* social links fill  */
+  --very-soft-red: #fea5bb;
+  --white: #ffffff;
+  /* button hover gray */
+  --light-grayish-red: #ecebeb;
+  /* location gray din footer */
+  --dark-grayish-red: #907e82;
+  /* copyright line */
+  --copyright-line-grey: #e1e1e1;
+  --copyright-text-grey: #907e82;
+}
+
+.full-background {
+  background-color: var(--pale-pink);
+  overflow: hidden;
+}
+
+.global-header {
+  margin: 0 auto;
+  padding: 40px 16px;
+  max-width: 1280px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo svg {
+  position: relative;
+  width: 199px;
+  height: 50px;
+  margin-left: 0px;
+  z-index: 5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header ul {
+  display: flex;
+  padding: 0;
+  overflow: visible;
+  gap: 35px;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.header-navigation a:hover {
+  color: var(--strong-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.buy-now-btn button {
+  border-radius: 22px;
+  width: 159px;
+  height: 44px;
+  border-width: 0px;
+  background-color: var(--white);
+  color: var(--strong-red);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.buy-now-btn button:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.header li {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+  z-index: 3;
+}
+
+.ice-cream-with {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  line-height: 90%;
+  padding-top: 0px;
+}
+
+.passion {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 58px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--strong-red);
+  line-height: 90%;
+}
+
+h1 span {
+  display: flex;
+}
+
+.global-header {
+  height: 664px;
+  position: relative;
+}
+
+.global-header p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--white);
+}
+
+.arrow-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border-width: 0px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+}
+
+.arrow-btn:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.arrow-btn svg {
+  // width: 26px;
+  height: 24px;
+  fill: var(--strong-red);
+}
+
+.hero-jug {
+  display: flex;
+  flex: column;
+  align-items: center;
+}
+
+.hero-left {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  bottom: 60px;
+}
+
+.hero-buttons ul {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  border-width: 0px;
+  padding-left: 0px;
+}
+
+.hero-products-btn {
+  border-radius: 20px;
+  width: 107px;
+  height: 40px;
+  background-color: var(--strong-red);
+  color: var(--white);
+  border-width: 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-howitsmade-btn {
+  border-radius: 20px;
+  width: 138px;
+  height: 40px;
+  background-color: var(--white);
+  color: var(--strong-red);
+  border-width: 0px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.hero-howitsmade-btn:hover {
+  background-color: var(--light-grayish-red);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button {
+  cursor: pointer;
+}
+
+.hero-icecream {
+  position: absolute;
+  right: 160px;
+  bottom: 77px;
+  background: var(--pale-red) center;
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.hero-icecream img {
+  position: absolute;
+  right: 179px;
+  top: 54px;
+}
+
+.tasty {
+  position: absolute;
+  right: 16px;
+  bottom: -3px;
+  z-index: 4;
+}
+
+.cafes-trucks {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 16px;
+  top: 152px;
+}
+
+.cafes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.cafes-number,
+.trucks-number {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 46px;
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: var(--strong-red);
+  z-index: 3;
+  padding: 8px;
+}
+
+.cafes-cafes,
+.trucks-trucks {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: var(--white);
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
+.circle,
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.food-trucks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
